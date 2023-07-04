@@ -349,7 +349,7 @@ if [ "$PMTYPE" == "1" ] ; then
 	vpl_install "Web browser" firefox
 else
 	if [ "$(command -v add-apt-repository)" != "" ] ; then
-		add-apt-repository universe &> /dev/null
+		add-apt-repository -y universe &> /dev/null
 	fi
 	vpl_install "make" make
 	vpl_install "LSB" lsb lsb-core lsb-compat
